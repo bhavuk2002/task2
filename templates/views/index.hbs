@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="/css/style.css"> <!-- or absolute path is /css/styles.css --> 
-    <title>Weather</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Login Form</title>
     <link rel="icon" href="/img/weather.png">
 </head>
 <body>
 
-    <div class="main-content">
-        {{!-- {{>header}} --}}
-        <p>Use this site to get your weather!</p>
+    <div class ="login">
+		<h2>Login</h2>
+		<form>
+			<div class="user">
+				<input type="text" name="" required="" id="email" placeholder="Type your username">
+				<label>Username</label>
+			</div>
+			<div class="user">
+					<input type="password" name="" required="" id="password" placeholder="Type your password">
+					<label>Password</label>
+			</div>
+			<right>
+			<div class = "userf">
+				<label>Forgot password?</label></p>
+			</div>
+			</right>
+			<a href="#"></a>
+			<span></span>
+			<button>Login</button>
+			</a>
+			<br><br><br><br><br><br><br><br><br>
 
-        <form>
-            <input type="text" placeholder="Location" id="email">
-            <input type="text" placeholder="Location" id="password">
-            <button>Search</button>
-        </form>
+			<div class = "sign">
+				<label>Or sign in Using</label>
+				<a href="#">SIGN UP</a>
+			</div>
+		</form>
 
         <p id="message-1"></p>
-        <p id="message-2"></p>
-    </div>
 
-    {{!-- <h1>{{title}}</h1> --}}
-    {{!-- <p>Created by {{name}}</p> --}}
-    {{!-- {{>footer}} --}}
+	</div>
+
     <script src="/js/app.js"></script>
 
 </body>
